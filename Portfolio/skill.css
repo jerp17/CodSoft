@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+i.bi{
+    margin-right: 10px;
+}
+p{
+  margin: 30px 0;
+  font-weight: 500;
+  line-height: 2;
+}
+header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 10px 2%;
+
+}
+li a,.content a{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-decoration:none;
+    color:black;
+    transition: all 0.3s ease 0s;
+    border:2px solid black;
+    border-radius:70px;
+    cursor: pointer;
+    
+}
+li a:hover{
+    background-color:blue;
+    color: white;
+    
+}
+nav ul li {
+    display:inline-block;
+    padding: 0px 10px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    width: 200px;
+}
+.photo1{
+    width: 600px;
+    height: 600px;
+    padding-bottom: 50px;
+    float:left;
+}
+.skills{
+    margin: 10px 0;
+    
+}
+.p1{
+    width: 90%;
+  }
+.p2{
+    width: 80%;
+  }
+.p3{
+    width: 70%;
+  }
+.p4{
+    width: 50%;
+}
+.skill{
+    padding: 0;
+    padding: 10px 10px;
+    padding-left: 800px;
+    padding-right: 50px;
+}
+.title{
+    color:blue;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .progress{
+    width: 100%;
+    height: 50px;
+    background: #ddd;
+    border-radius: 20px;
+  }
+  .progress-bar{
+    height: 50px;
+    background: #3CEDA7;
+    border-radius: 120px;
+  }
+  .progress-bar span{
+    float: right;
+    margin-right: 17px;
+    line-height: 33px;
+    color:black;
+    font-size: 30px;
+  }

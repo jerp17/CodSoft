@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Calculator 
+    </title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="claculator.css">
+</head>
+<body>
+<div class="content">
+        <div class="wrapper">
+            <center>
+            <h1><span style="color:white;font-size: 60px;font-weight: 800;">Calculate</span></h1>
+            </center>
+            <br>
+            <p>Basic Calculator: Perform Math Easily!
+                <br><br>
+                Need to crunch numbers? Our online basic calculator has got you covered. Whether you’re a student, professional, or just someone who loves math, this calculator simplifies your calculations. Here’s what it offers:
+                <br><br>
+                Simple Interface: Just like a handheld calculator, our online version is user-friendly. No complicated buttons or confusing menus—just straightforward math.
+                <br>
+                2.Essential Operations:<br>
+                Addition (+)
+                Subtraction (-)
+                Multiplication (×)
+                Division (÷)</p>
+        </div>
+        
+        <div class="calc">
+   
+            <input type="text"placeholder="0"id="output-screen">
+            <button onclick="Clear()">AC</button>
+            <button onclick="del()">Del</button>
+            <button onclick="display('+/-')">+/-</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="calculate()">=</button>
+
+        </div>
+    </div>
+    <script>
+        let outputScreen= document.getElementById("output-screen");
+        function display(num) {
+            outputScreen.value+=num;
+        }
+        function calculate(){
+            try{
+                outputScreen.value=eval(outputScreen.value);
+            }
+            catch(err)
+            {
+                alert("Invalid");
+            }
+        }
+        function Clear()
+        {
+            outputScreen.value ="";
+        }
+         function del() {
+            outputScreen.value=outputScreen.value.slice(0,-1);
+         }  
+        
+    </script>
+</body>
+</html>
